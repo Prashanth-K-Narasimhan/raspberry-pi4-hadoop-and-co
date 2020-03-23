@@ -1,11 +1,15 @@
 # Raspberry pi 4 - hadoop and Co
 
+L'objectif de github est de montrer qu'on peut utiliser quelques modules de l'écosystème Hadoop avec des raspberry pi 4.
+
+- Présentation du cluster Hadoop [cf. Description_cluster_raspberry.md]
+
 - Instalation des modules suivants :
-    - hadoop
-    - spark
-    - kafka
-    - zookeeper
-    - cassandra
+    - Hadoop
+    - Spark
+    - Kafka 
+    - Zookeeper
+    - Cassandra
     
 - Utilisation par le biais d'un fil rouge : amusons avec des tweets
 
