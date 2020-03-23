@@ -24,7 +24,7 @@ consumer_secret =  "ZZZZZZ"
 class MyStreamListener(StreamListener):
     def on_data(self, data):
         # producer.send("coronavirus", data.encode('utf-8'))
-        # recuperation et envoi tex
+        # recuperation et envoi du texte
         full_tweet = json.loads(data)
         # transmet uniquement si  les champs text, id_str et id existent
         if full_tweet.get('text') and full_tweet.get('id_str') and full_tweet.get('id'):
@@ -34,6 +34,7 @@ class MyStreamListener(StreamListener):
             # print("Tweet Text: " + tweet_text)
             # print ("------------------------------------------")
             # producer.send("coronavirus", tweet_text.encode('utf-8'))
+            # envoi du tweet en utf-8
             producer.send("coronavirus", data.encode('utf-8'))
             #print (data)
         return True
