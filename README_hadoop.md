@@ -67,20 +67,20 @@ On commence par télécharger la version 2.9.2 d'hadoop
  
  - noeud maître
  
-    pi@pi-node29:~ $ jps
-    19920 ResourceManager
-    7250 NameNode
-    7539 SecondaryNameNode
-    7350 DataNode
-    20282 Jps
-    20012 NodeManager
+       pi@pi-node29:~ $ jps
+       19920 ResourceManager
+       7250 NameNode
+       7539 SecondaryNameNode
+       7350 DataNode
+       20282 Jps
+       20012 NodeManager
 
 - noeud esclave
 
-    pi@pi-node30:~ $ jps
-    22643 Jps
-    22473 NodeManager
-    5341 DataNode
+       pi@pi-node30:~ $ jps
+       22643 Jps
+       22473 NodeManager
+       5341 DataNode
  
  
  
