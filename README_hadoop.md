@@ -9,6 +9,7 @@ On commence par télécharger la version 2.9.2 d'hadoop
        wget https://downloads.apache.org/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
        tar zxvf hadoop-2.9.2.tar.gz
        sudo mv hadoop-2.9.2 /opt/hadoop
+       sudo chown pi:pi -R /opt/hadoop
        
 # Modification du .bashrc
 
@@ -35,8 +36,52 @@ On commence par télécharger la version 2.9.2 d'hadoop
  
     java -version
        
+ # Préparation du répertoire hdfs
+ 
+ Sur chaque noeud du cluster, effectuer les opérations suivantes :
+ 
+    sudo mkdir /hdfs
+    sudo mkdir /hdfs/tmp
+    chown pi:pi -R /hdfs
+    
+    # si le répertoire doit être réinitialisé
+    rm -rf /hdfs/tmp/*
+    
+    $HADOOP_HOME/bin/hdfs namenode -format
+        
 
  # Configuration des fichiers de configuration de hadoop
+ 
+ Dans le répertoire $HADOOP_HOME/etc/hadoop
+ 
+ fichiers : core-site.xml, hdfs-site.xml, mapred-site.xml, yarn-site.xml, hadoop-env.sh, master et slaves
+ 
+ Attention aux configurations : remplacer pi-nodeXX par les noms des noeuds de votre cluster.
+ 
+ # Lancer hadoop
+ 
+    $HADOOP_HOME/sbin/start-dfs.sh
+    $HADOOP_HOME/sbin/star-yarn.sh
+    
+ # vérification d'un démarrage correct
+ 
+ - noeud maître
+ 
+    pi@pi-node29:~ $ jps
+    19920 ResourceManager
+    7250 NameNode
+    7539 SecondaryNameNode
+    7350 DataNode
+    20282 Jps
+    20012 NodeManager
+
+- noeud esclave
+
+    pi@pi-node30:~ $ jps
+    22643 Jps
+    22473 NodeManager
+    5341 DataNode
+ 
  
  
  
