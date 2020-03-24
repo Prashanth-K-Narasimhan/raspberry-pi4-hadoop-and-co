@@ -7,14 +7,14 @@ L'objectif de github est de montrer qu'on peut utiliser quelques modules de l'é
 - Installation des modules suivants :
     - Hadoop
     - Spark
-    - Kafka 
+    - Kafka  (
     - Zookeeper
     - Cassandra
     
 - Utilisation par le biais d'un fil rouge : amusons avec des tweets
 
 - On commencera par :
-  - utilisation de spark streaming (avec ou sans yarn)
+  - utilisation de spark streaming (cf. spark-streaming-twitter.md)
   - tranfert de tweets dans kafka
   - intégration à spark
   - utilisation de cassandra
