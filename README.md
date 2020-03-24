@@ -7,7 +7,7 @@ L'objectif de github est de montrer qu'on peut utiliser quelques modules de l'é
 - Installation des modules suivants :
     - Hadoop
     - Spark
-    - Kafka  (README-kafka.md)
+    - Kafka  (README_kafka.md)
     - Zookeeper
     - Cassandra
     
