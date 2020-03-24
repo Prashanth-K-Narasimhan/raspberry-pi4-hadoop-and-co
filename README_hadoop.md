@@ -56,6 +56,8 @@ On commence par télécharger la version 2.9.2 d'hadoop
  
  fichiers : core-site.xml, hdfs-site.xml, mapred-site.xml, yarn-site.xml, hadoop-env.sh, master et slaves
  
+ (cf. répertoire hadoop)
+ 
  Attention aux configurations : remplacer pi-nodeXX par les noms des noeuds de votre cluster.
  
  # Lancer hadoop
