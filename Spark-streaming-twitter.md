@@ -16,7 +16,7 @@ On commence par démarrer les services spark, puis on soumet le script
         $SPARK_HOME/sbin/start-all.sh
         /opt/spark/bin/spark-submit spark_stream_twitter.py
         
-  (lancer dfs a été nécessaire pour utiliser checkpoint
+  (le probleme sur la fonction checkpoint a été corrigé en démarrant dfs
         
         $HADOOP_HOME/sbin/start-dfs.sh
 
