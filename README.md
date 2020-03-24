@@ -5,7 +5,7 @@ L'objectif de github est de montrer qu'on peut utiliser quelques modules de l'é
 - Présentation du cluster Hadoop [cf. Description_cluster_raspberry.md]
 
 - Installation des modules suivants :
-    - Hadoop
+    - Hadoop (README_hadoop.md)
     - Spark
     - Kafka  (README_kafka.md)
     - Zookeeper
