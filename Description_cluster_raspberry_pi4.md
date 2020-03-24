@@ -15,7 +15,7 @@
 
 ## Mise en place
 
-- 4 raspeberry pi sont connectés à un GS205 lui même connecté au GS 316.
+- 4 raspeberry pi sont connectés à un GS 205 lui même connecté au GS 316.
 
 ## Utilisation d'un NAS synology pour gérer le DHCP
 
