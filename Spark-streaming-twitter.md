@@ -6,7 +6,7 @@ Lançons les trois applications dans l’ordre suivant :
  
 - Twitter App Client.
 
-        python twitter_client.py
+        python spark_streaming_twitter_client.py
 
 
 - Soumission du script Spark.
