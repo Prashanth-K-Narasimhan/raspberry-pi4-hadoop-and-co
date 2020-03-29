@@ -84,7 +84,15 @@ On commence par télécharger la version 2.9.2 d'hadoop
        22473 NodeManager
        5341 DataNode
  
+ • Pages web à regarder
  
+ Concernant les nodes et les applications
  
+ http://pi-node16:8088/cluster
  
+ Concernant les datanodes
+ 
+ http://pi-node16:9870/dfshealth.html#tab-overview
+ 
+ (dans cet exemple, c'est pi-node16 qui gère)
  
